@@ -1,0 +1,446 @@
+:root{
+    --police: 'Sansia';
+}
+
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: rgb(247,247,242);
+    background: linear-gradient(137deg, rgba(247,247,242,1) 19%, rgba(238,223,170,0.5984768907563025) 100%);
+}
+
+
+li{
+    display: inline;
+    padding: 10px;
+    transition: all 400ms;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li button{
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    background: rgba(238,223,170,1);
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 300ms;
+}
+
+li button i{
+    padding-right: 5px;
+    transition: 300ms;
+}
+
+li button:hover i{
+    padding-right: 7px;
+}
+
+li button:hover{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+hr{
+    width: 80%;
+    margin: auto;
+    opacity: .5;
+}
+
+header h3{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+}
+
+.title-font{
+    font-family: 'DM Serif Display', serif;
+
+}
+
+
+article{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.dossier-lien{
+
+    width: 90%;
+    border: none;
+    padding: 0;
+    background-color: rgb(0, 0, 0); /* a changer en fonction de l'image */
+    min-height: auto;
+    margin: auto;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    margin-top: 7%;
+
+    max-height: 300px;
+
+
+
+}
+
+.dossier-lien:hover{
+    cursor: pointer;
+}
+
+.dossier-lien h2{
+    padding: 10px;
+    position: absolute;
+    left: 3%;
+    bottom: 0px;
+    font-size: 3em;
+    transition: 300ms;
+    animation: animtitre 14s infinite;
+
+    z-index: 1000;
+}
+
+@keyframes animtitre {
+    0%{transform: translateY(-10%);}
+    25%{transform: rotateZ(1deg);}
+    50%{transform: translateY(-20%);}
+    75%{transform: rotateZ(-1deg);}
+    100%{transform: translateY(-10%);}
+}
+.dossier-lien img{
+    border-radius: 0%;
+    box-shadow: 0px 0px 35px 0px #000000;
+    width: 60%; 
+    transition: 400ms ease;
+}
+
+.dossier-lien:hover img{
+    transform: scale(1.1);
+}
+
+
+.paradossier{
+padding: 10px;
+position: absolute;
+top: 2%;
+left: 3%;
+font-weight: 900;
+text-transform: uppercase;
+font-size: 2em;
+transition: 300ms;
+
+
+}
+
+.Date{
+transition: 300ms;
+font-size: 140%;
+font-weight: 600;
+padding: 10px;
+position: absolute;
+top: 5%;
+right: 3%;
+background-color: white;
+color: black;
+border-radius: 10px;
+background: rgb(247,247,242, );
+
+}
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.liens-article{
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+}
+ .liens-article:hover{
+    cursor: pointer;
+ }
+
+ .liens-article:hover img{
+    transform: scale(1.1);
+}
+.liens-article h3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 300%;
+    color: white;
+    transition: 300ms;
+}
+
+.liens-article img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 400ms ease;
+}
+
+.liens-article .paraarticle{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    transition: 300ms;
+}
+
+
+.conteneurboutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.conteneurboutton button{
+    padding: 20px;
+    font-size: 1em;
+    
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+.griddossier{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.autrelien{
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+}
+.autrelien i{
+    padding: 10px;
+    transition: all 300ms ease;
+}
+
+.autrelien:hover i{
+    padding: 5px;
+}
+
+.autrelien a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .liens-article{
+        min-height: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    
+    }
+    
+    .liens-article h3{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 300%;
+        color: white;
+    }
+    
+    .liens-article img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .liens-article .paraarticle{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        background-color: white;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .liens-article{
+        min-height: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    
+    }
+    
+    .liens-article h3{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 200%;
+        color: white;
+    }
+    
+    .liens-article img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .liens-article .paraarticle{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border-radius: 3px;
+        
+    }
+
+
+
+
+
+
+
+
+    .dossier-lien{
+        width: 95%;
+        border: none;
+        padding: 0;
+        background-color: rgb(54, 54, 54);
+        min-height: auto;
+        margin: auto;
+        margin-bottom: 5px;
+        overflow: hidden;
+        border-radius: 10px;
+        color: white;
+        position: relative;
+
+        margin-top: 3%;
+
+        transition: 300ms;
+    
+    }
+
+    .dossier-lien h2{
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        font-size: 2em;
+        
+    }
+    
+    .dossier-lien img{
+        border-radius: 0%;
+        box-shadow: 0px 0px 35px 0px #000000;
+        width: 100%;
+        transition: 400ms ease;
+    }
+    
+    .dossier-lien:hover img{
+        transform: scale(1.1);
+    }
+    
+
+    
+.griddossier{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    width: 95%;
+    margin: auto;
+}
+
+.paradossier{
+    padding: 10px;
+    position: absolute;
+    top: 2%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1em;
+    
+
+}
+
+.Date{
+    font-size: 1em;
+    padding: 10px;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    background: rgb(247,247,242);
+   
+}
+
+
+}

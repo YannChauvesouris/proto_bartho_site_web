@@ -1,0 +1,23 @@
+police pour le site Bartholdi : Source Sans Pro -> pour le texte -- ou -- Karla
+
+Source Sans Pro : @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+Lobster pour les titre ou Sansita
+
+Sansia : @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+police spéciale dossier haloween : Aclonica
+
+palette de couleur
+
+blanc très clair : #f7f7f2  'baby powder'
+blanc vert clair pastel jaune : #e4e6c3  'pale spring bud'
+gis vert pastel : #899878  'Artichoke'
+gris foncé chaud : #222725  'Charleston Grreen'
+noir fumée : #121113  'Smoky Black'
+
+
+lien vers palette --> https://coolors.co/f7f7f2-e4e6c3-899878-222725-121113 <--
+
+
+s'inspirer du header de ce site : --> https://fr.wix.com/website-template/view/html/3150?originUrl=https%3A%2F%2Ffr.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3Dactualit%25C3%25A9e&tpClick=view_button&esi=f5f0ff48-92bb-48f0-b8b3-db39e893617e <--
